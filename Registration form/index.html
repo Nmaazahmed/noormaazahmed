@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="main-container">
+        <h1 class="main-heading">Registration Form</h1>
+    <form class="row g-3">
+        <div class="col-md-4">
+          <label for="firstnamevalidation" class="form-label">First name</label>
+          <input type="text" class="form-control" onkeydown="validate(false)" id="firstNameValidation" />
+          <div class="valid-feedback" id="firstNameValid">Looks good!</div>
+          <div class="invalid-feedback" id="firstNameInvalid">
+            Please enter a valid first-name!
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="lastNameValidation" class="form-label">Last name</label>
+          <input type="text" class="form-control" onkeydown="validate(false)" id="lastNameValidation" />
+          <div class="valid-feedback" id="lastNameValid">Looks good!</div>
+          <div class="invalid-feedback" id="lastNameInvalid">
+            Please enter a valid last-name!
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <label for="mailValidation" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input 
+            onkeydown="validate(false)"
+            type="text" class="form-control" id="mailValidation"  />
+            <div class="valid-feedback" id="mailValid">Looks good!</div>
+            <div class="invalid-feedback" id="mailInvalid">
+              Please enter a valid E-mail address.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <label for="validationDefaultPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <span class="input-group-text" >*</span>
+              <input 
+              onkeydown="validate(false)"
+              type="text" class="form-control" id="Password"  />
+              <div class="valid-feedback" id="passwordValid">Looks good!</div>
+            <div class="invalid-feedback" id="passwordInvalid">
+              Please Provide a valid password.
+            </div>
+          </div>
+        </div>
+      
+        
+          <div class="col-md-6">
+            <label for="validationDefaultCPassword" class="form-label">Confirm Password</label>
+            <div class="input-group">
+              <span class="input-group-text">*</span>
+              <input 
+              onkeydown="validate(false)"
+              type="text" class="form-control" id="CPassword"  />
+              <div class="valid-feedback" id="CpasswordValid">Looks good!</div>
+            <div class="invalid-feedback" id="CpasswordInvalid">
+              Password and confirm password don't match.
+            </div>
+          </div>
+         </div>
+  
+
+        <div class="col-12">
+          <div class="form-check">
+            <input 
+            onkeydown="validate(false)"
+            class="form-check-input" type="checkbox"  id="checkboxValidation" />
+            <label class="form-check-label" for="checkboxValidation">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback" id="tcInValid">
+              You must be agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 btn">
+          <button class="btn btn-primary" type="button" id="submitForm">Submit form</button>
+        </div>
+      </form>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>  
+</body>
+</html>
